@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'testng-practice'
+rootProject.name = 'java-restassured'
