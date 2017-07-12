@@ -1,4 +1,4 @@
-package test.slow;
+package slow;
 
 import org.testng.annotations.Test;
 import static org.fest.assertions.api.Assertions.assertThat;

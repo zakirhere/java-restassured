@@ -1,4 +1,4 @@
-package test.calc;
+package calc;
 import org.testng.annotations.Test;
 
 import main.calc.Calculator;
