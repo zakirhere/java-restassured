@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <!--This will help us run multiple classes in parallel-->
+    <test name="parallelClasses" parallel="classes" enabled="true">
+        <classes>
+            <class name="test.slow.DelayedExecution"/>
+            <class name="test.misc.ClassLevelTagging"/>
+        </classes>
+    </test>
+
+    <test name="parallelMethods2" enabled="false">
+        <classes>
+            <class name="test.misc.ParallelMethods">
+            </class>
+        </classes>
+    </test>
+    <test name="classLevelTagging" enabled="false">
+        <classes>
+            <class name="test.misc.ClassLevelTagging"/>
+        </classes>
+    </test>
+
+    <test name="dependenciesHardSoft" preserve-order="false" enabled="false">
+        <packages>
+            <package name="test.slow"></package>
+        </packages>
+    </test>
+
+    <test name="randomOrderExecution" preserve-order="false" enabled="false">
+        <classes>
+            <class name="test.calc.CalculatorTest">
+                <methods>
+                    <exclude name="testAdd"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+
+    <test name="groupTest" enabled="false">
+        <groups>
+            <run>
+                <exclude name="broken"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="test.calc.CalculatorTest"/>
+        </classes>
+    </test>
+    <test name="Test" enabled="false">
+        <!--     <packages>
+              <package name="test.calc" />
+            </packages> -->
+        <classes>
+            <class name="test.calc.CalculatorTest"/>
+            <!-- <class name="LibraryTest"/> -->
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
