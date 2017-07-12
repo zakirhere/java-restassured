@@ -4,46 +4,46 @@
 
   <test name="californiaTest">
     <classes>
-      <class name="test.restassured.usa.states.CaliforniaState"/>
+      <class name="restassured.usa.states.CaliforniaState"/>
     </classes>
   </test>
 
   <test name="newYorkState">
     <classes>
-      <class name="test.restassured.usa.states.NewYorkState"/>
+      <class name="restassured.usa.states.NewYorkState"/>
     </classes>
   </test>
 
   <test name="texasState">
     <classes>
-      <class name="test.restassured.usa.states.TexasState"/>
+      <class name="restassured.usa.states.TexasState"/>
     </classes>
   </test>
 
 
   <test name="californiaTest" parallel="methods" enabled="false">
     <classes>
-      <class name="test.restassured.usa.states.CaliforniaState"/>
+      <class name="restassured.usa.states.CaliforniaState"/>
     </classes>
   </test>
 
   <test name="newYorkState" parallel="methods" enabled="false">
     <classes>
-      <class name="test.restassured.usa.states.NewYorkState"/>
+      <class name="restassured.usa.states.NewYorkState"/>
     </classes>
   </test>
 
   <test name="texasState" parallel="methods" enabled="false">
     <classes>
-      <class name="test.restassured.usa.states.TexasState"/>
+      <class name="restassured.usa.states.TexasState"/>
     </classes>
   </test>
 
 
   <test name="Test" parallel="classes" enabled="false">
     <classes>
-      <class name="test.restassured.usa.states.NewYorkState"/>
-      <class name="test.restassured.usa.states.CaliforniaState"/>
+      <class name="restassured.usa.states.NewYorkState"/>
+      <class name="restassured.usa.states.CaliforniaState"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

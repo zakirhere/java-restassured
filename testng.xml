@@ -5,20 +5,20 @@
     <!--This will help us run multiple classes in parallel-->
     <test name="parallelClasses" parallel="classes" enabled="true">
         <classes>
-            <class name="test.slow.DelayedExecution"/>
-            <class name="test.misc.ClassLevelTagging"/>
+            <class name="slow.DelayedExecution"/>
+            <class name="misc.ClassLevelTagging"/>
         </classes>
     </test>
 
     <test name="parallelMethods2" enabled="false">
         <classes>
-            <class name="test.misc.ParallelMethods">
+            <class name="misc.ParallelMethods">
             </class>
         </classes>
     </test>
     <test name="classLevelTagging" enabled="false">
         <classes>
-            <class name="test.misc.ClassLevelTagging"/>
+            <class name="misc.ClassLevelTagging"/>
         </classes>
     </test>
 
@@ -30,7 +30,7 @@
 
     <test name="randomOrderExecution" preserve-order="false" enabled="false">
         <classes>
-            <class name="test.calc.CalculatorTest">
+            <class name="calc.CalculatorTest">
                 <methods>
                     <exclude name="testAdd"/>
                 </methods>
@@ -48,7 +48,7 @@
         </groups>
 
         <classes>
-            <class name="test.calc.CalculatorTest"/>
+            <class name="calc.CalculatorTest"/>
         </classes>
     </test>
     <test name="Test" enabled="false">
@@ -56,7 +56,7 @@
               <package name="test.calc" />
             </packages> -->
         <classes>
-            <class name="test.calc.CalculatorTest"/>
+            <class name="calc.CalculatorTest"/>
             <!-- <class name="LibraryTest"/> -->
         </classes>
     </test> <!-- Test -->
